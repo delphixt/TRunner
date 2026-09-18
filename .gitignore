@@ -1,0 +1,5 @@
+_backup/
+trunner_diag.txt
+README_V0.27.txt
+*.bak
+.gitignore

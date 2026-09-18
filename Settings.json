@@ -1,0 +1,1178 @@
+﻿{
+  "1": {
+    "function": "ToggleWindowAlwaysOnTop",
+    "icon": "imageres.dll:234",
+    "items": [],
+    "name": "切换窗口置顶",
+    "sub": {},
+    "target": "",
+    "type": "function"
+  },
+  "10": {
+    "function": "",
+    "icon": "shell32.dll,317",
+    "items": [
+      {
+        "cmd": "cmd",
+        "icon": "cmd.exe:0",
+        "text": "命令提示符"
+      },
+      {
+        "cmd": "powershell",
+        "icon": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe:0",
+        "text": "PowerShell"
+      },
+      {
+        "cmd": "taskmgr.exe",
+        "icon": "Taskmgr.exe:0",
+        "text": "任务管理器"
+      },
+      {
+        "cmd": "explorer",
+        "icon": "C:\\Windows\\explorer.exe:1",
+        "text": "资源管理器"
+      },
+      {
+        "cmd": "control",
+        "icon": "control.exe:0",
+        "text": "控制面板"
+      },
+      {
+        "cmd": "notepad.exe",
+        "icon": "notepad.exe:0",
+        "text": "记事本"
+      },
+      {
+        "cmd": "calc.exe",
+        "icon": "calc.exe:0",
+        "text": "计算器"
+      },
+      {
+        "cmd": "mspaint.exe",
+        "icon": "mspaint.exe:0",
+        "text": "画图"
+      },
+      {
+        "cmd": "wordpad.exe",
+        "icon": "C:\\Program Files\\Windows NT\\Accessories\\wordpad.exe:0",
+        "text": "写字板"
+      },
+      {
+        "cmd": "---",
+        "icon": "",
+        "text": ""
+      },
+      {
+        "cmd": ">系统配置",
+        "icon": "shell32.dll,317",
+        "text": "系统配置"
+      },
+      {
+        "cmd": ">管理工具",
+        "icon": "shell32.dll,36",
+        "text": "管理工具"
+      },
+      {
+        "cmd": ">系统和安全",
+        "icon": "shell32.dll,185",
+        "text": "系统和安全"
+      },
+      {
+        "cmd": ">用户账户",
+        "icon": "shell32.dll,161",
+        "text": "用户账户"
+      },
+      {
+        "cmd": ">网络",
+        "icon": "shell32.dll,165",
+        "text": "网络"
+      },
+      {
+        "cmd": ">硬件和设备",
+        "icon": "shell32.dll,164",
+        "text": "硬件和设备"
+      },
+      {
+        "cmd": ">时钟和区域",
+        "icon": "shell32.dll,168",
+        "text": "时钟和区域"
+      }
+    ],
+    "name": "系统工具",
+    "sub": {
+      "时钟和区域": [
+        {
+          "cmd": "timedate.cpl",
+          "icon": "shell32.dll,167",
+          "text": "日期和时间"
+        },
+        {
+          "cmd": "intl.cpl",
+          "icon": "shell32.dll,167",
+          "text": "区域设置"
+        }
+      ],
+      "用户账户": [
+        {
+          "cmd": "netplwiz.cpl",
+          "icon": "shell32.dll,161",
+          "text": "用户账户 (控制面板)"
+        },
+        {
+          "cmd": "lusrmgr.msc",
+          "icon": "shell32.dll,166",
+          "text": "本地用户和组"
+        },
+        {
+          "cmd": "useraccountcontrolsettings",
+          "icon": "shell32.dll,160",
+          "text": "用户账户控制设置"
+        },
+        {
+          "cmd": "---",
+          "text": ""
+        },
+        {
+          "cmd": "appwiz.cpl",
+          "icon": "shell32.dll,163",
+          "text": "程序和功能"
+        }
+      ],
+      "硬件和设备": [
+        {
+          "cmd": "devmgmt.msc",
+          "icon": "C:\\Windows\\System32\\devmgr.dll:0",
+          "text": "设备管理器"
+        },
+        {
+          "cmd": "control printers",
+          "icon": "shell32.dll,22",
+          "text": "设备和打印机"
+        },
+        {
+          "cmd": "---",
+          "text": ""
+        },
+        {
+          "cmd": "desk.cpl",
+          "icon": "shell32.dll,35",
+          "text": "显示设置"
+        },
+        {
+          "cmd": "mmsys.cpl",
+          "icon": "ddores.dll,2",
+          "text": "声音设置"
+        },
+        {
+          "cmd": "mouse.cpl",
+          "icon": "ddores.dll,30",
+          "text": "鼠标设置"
+        },
+        {
+          "cmd": "keyboard.cpl",
+          "icon": "ddores.dll,29",
+          "text": "键盘设置"
+        },
+        {
+          "cmd": "powercfg.exe",
+          "icon": "ddores.dll:23",
+          "text": "电源选项"
+        }
+      ],
+      "管理工具": [
+        {
+          "cmd": "compmgmt.msc",
+          "icon": "imageres.dll,314",
+          "text": "计算机管理"
+        },
+        {
+          "cmd": "services.msc",
+          "icon": "shell32.dll,166",
+          "text": "服务"
+        },
+        {
+          "cmd": "eventvwr.exe",
+          "icon": "C:\\Windows\\System32\\eventvwr.exe:0",
+          "text": "事件查看器"
+        },
+        {
+          "cmd": "taskschd.msc",
+          "icon": "shell32.dll,240",
+          "text": "任务计划程序"
+        },
+        {
+          "cmd": "perfmon.exe",
+          "icon": "C:\\Windows\\System32\\perfmon.exe:0",
+          "text": "性能监视器"
+        },
+        {
+          "cmd": "resmon.exe",
+          "icon": "C:\\Windows\\System32\\resmon.exe:0",
+          "text": "资源监视器"
+        },
+        {
+          "cmd": "certmgr.msc",
+          "icon": "shell32.dll,166",
+          "text": "证书管理器"
+        },
+        {
+          "cmd": "gpedit.msc",
+          "icon": "shell32.dll,166",
+          "text": "组策略"
+        },
+        {
+          "cmd": "secpol.msc",
+          "icon": "shell32.dll,166",
+          "text": "本地安全策略"
+        },
+        {
+          "cmd": "---",
+          "text": ""
+        },
+        {
+          "cmd": "diskmgmt.msc",
+          "icon": "C:\\Windows\\System32\\cleanmgr.exe:0",
+          "text": "磁盘管理"
+        },
+        {
+          "cmd": "cleanmgr.exe",
+          "icon": "C:\\Windows\\System32\\cleanmgr.exe:0",
+          "text": "磁盘清理"
+        },
+        {
+          "cmd": "defrag.exe -h",
+          "icon": "C:\\Windows\\System32\\defrag.exe:0",
+          "text": "磁盘碎片整理"
+        }
+      ],
+      "系统和安全": [
+        {
+          "cmd": "firewall.cpl",
+          "icon": "shell32.dll,104",
+          "text": "防火墙"
+        },
+        {
+          "cmd": "control update",
+          "icon": "shell32.dll,47",
+          "text": "Windows 更新"
+        },
+        {
+          "cmd": "ntbackup.exe",
+          "icon": "shell32.dll,104",
+          "text": "备份和还原"
+        },
+        {
+          "cmd": "rstrui.exe",
+          "icon": "C:\\Windows\\System32\\rstrui.exe:0",
+          "text": "恢复 (系统还原)"
+        }
+      ],
+      "系统配置": [
+        {
+          "cmd": "taskmgr.exe",
+          "icon": "taskmgr.exe:0",
+          "text": "任务管理器"
+        },
+        {
+          "cmd": "explorer",
+          "icon": "imageres.dll:204",
+          "text": "资源管理器"
+        },
+        {
+          "cmd": "regedit.exe",
+          "icon": "regedt32.exe:0",
+          "text": "注册表编辑器"
+        },
+        {
+          "cmd": "msconfig",
+          "icon": "C:\\Windows\\System32\\msconfig.exe:0",
+          "text": "系统配置 (MSConfig)"
+        },
+        {
+          "cmd": "sysdm.cpl",
+          "icon": "imageres.dll,3",
+          "text": "系统属性"
+        },
+        {
+          "cmd": "msinfo32.exe",
+          "icon": "C:\\Windows\\System32\\msinfo32.exe:0",
+          "text": "系统信息"
+        },
+        {
+          "cmd": "dxdiag.exe",
+          "icon": "C:\\Windows\\System32\\dxdiag.exe:0",
+          "text": "DirectX 诊断工具"
+        }
+      ],
+      "网络": [
+        {
+          "cmd": "ncpa.cpl",
+          "icon": "shell32.dll,17",
+          "text": "网络和共享中心"
+        },
+        {
+          "cmd": "ncpl.cpl",
+          "icon": "shell32.dll,17",
+          "text": "网络连接"
+        },
+        {
+          "cmd": "mstsc.exe",
+          "icon": "C:\\Windows\\System32\\mstsc.exe:0",
+          "text": "远程桌面连接"
+        },
+        {
+          "cmd": "---",
+          "text": ""
+        },
+        {
+          "cmd": "nettrace",
+          "icon": "shell32.dll,17",
+          "text": "网络诊断"
+        }
+      ]
+    },
+    "target": "",
+    "type": "menu"
+  },
+  "11": {
+    "function": "",
+    "icon": "imageres.dll:251",
+    "items": [
+      {
+        "cmd": "msedge.exe",
+        "icon": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe:0",
+        "text": "Edge浏览器"
+      },
+      {
+        "cmd": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+        "icon": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe:0",
+        "text": "Chrome浏览器"
+      },
+      {
+        "cmd": "---",
+        "icon": "",
+        "text": ""
+      },
+      {
+        "cmd": ">内部函数",
+        "icon": "C:\\Windows\\explorer.exe:18",
+        "text": "内部函数"
+      },
+      {
+        "cmd": ">网盘",
+        "icon": "C:\\Windows\\System32\\imageres.dll:232",
+        "text": "网盘"
+      },
+      {
+        "cmd": ">下载工具",
+        "icon": "imageres.dll:176",
+        "text": "下载工具"
+      },
+      {
+        "cmd": ">DOU",
+        "icon": "imageres.dll:263",
+        "text": "DOU"
+      },
+      {
+        "cmd": ">Game",
+        "icon": "imageres.dll:196",
+        "text": "Game"
+      },
+      {
+        "cmd": "---",
+        "icon": "",
+        "text": ""
+      },
+      {
+        "cmd": "D:\\App\\360驱动大师_2.0.0.1830_Single\\360驱动大师_2.0.0.1830_Single.exe",
+        "icon": "D:\\App\\360驱动大师_2.0.0.1830_Single\\360驱动大师_2.0.0.1830_Single.exe:0",
+        "text": "360驱动大师"
+      },
+      {
+        "cmd": "D:\\App\\aardio\\aardio.exe",
+        "icon": "D:\\App\\aardio\\aardio.exe:0",
+        "text": "aardio"
+      },
+      {
+        "cmd": "D:\\App\\Bypass\\Bypass.exe",
+        "icon": "D:\\App\\Bypass\\Bypass.exe,0",
+        "text": "Bypass"
+      },
+      {
+        "cmd": "D:\\App\\copyq\\copyq.exe",
+        "icon": "D:\\App\\copyq\\copyq.exe:0",
+        "text": "copyq"
+      },
+      {
+        "cmd": "C:\\App\\Directory.Opus.Pro.13.15_64bit_Neoland\\dopus.exe",
+        "icon": "D:\\App\\Directory.Opus.Pro.13.15_64bit_Neoland\\dopus.exe:0",
+        "text": "DirectoryOpus"
+      },
+      {
+        "cmd": "D:\\App\\FastCopy_5.10.0_Portable\\FastCopy5.10.0_x64\\FastCopy.exe",
+        "icon": "D:\\App\\FastCopy_5.10.0_Portable\\FastCopy5.10.0_x64\\FastCopy.exe:0",
+        "text": "FastCopy"
+      },
+      {
+        "cmd": "D:\\App\\FFRenamePro_x64_5.0.9.21\\FFRenamePro.exe",
+        "icon": "D:\\App\\FFRenamePro_x64_5.0.9.21\\FFRenamePro.exe:0",
+        "text": "FFRenamePro"
+      },
+      {
+        "cmd": "D:\\App\\JsonFormatter\\JsonFormatter.html",
+        "icon": "C:\\Windows\\System32\\shell32.dll:270",
+        "text": "JsonFormatter"
+      },
+      {
+        "cmd": "D:\\App\\LinuxReaderPortable\\LinuxReaderPortable.exe",
+        "icon": "D:\\App\\LinuxReaderPortable\\LinuxReaderPortable.exe:0",
+        "text": "LinuxReader"
+      },
+      {
+        "cmd": "D:\\App\\LiteMonitor\\LiteMonitor.exe",
+        "icon": "D:\\App\\LiteMonitor\\LiteMonitor.exe:0",
+        "text": "LiteMonitor"
+      },
+      {
+        "cmd": "D:\\App\\Mem Reduct3.5\\MemReduct64.exe",
+        "icon": "D:\\App\\Mem Reduct3.5\\MemReduct64.exe:0",
+        "text": "Mem Reduct"
+      },
+      {
+        "cmd": "D:\\App\\mihomo-party-windows-1.7.6-x64-portable\\Mihomo Party.exe",
+        "icon": "D:\\App\\mihomo-party-windows-1.7.6-x64-portable\\Mihomo Party.exe:0",
+        "text": "Mihomo Party"
+      },
+      {
+        "cmd": "\"C:\\Program Files\\Xiaomi MiMo\\Xiaomi MiMo.exe\"",
+        "icon": "C:\\Program Files\\Xiaomi MiMo\\Xiaomi MiMo.exe:0",
+        "text": "MiMo"
+      },
+      {
+        "cmd": "D:\\App\\Notepad4_25.1.0.5618_x64_v20\\Notepad4.exe",
+        "icon": "D:\\App\\Notepad4_25.1.0.5618_x64_v20\\Notepad4.exe:0",
+        "text": "Notepad4"
+      },
+      {
+        "cmd": "D:\\App\\QuickAny2Ico图标提取转换器v3.5.0.0单文件版\\Quick Any2Ico.exe",
+        "icon": "D:\\App\\QuickAny2Ico图标提取转换器v3.5.0.0单文件版\\Quick Any2Ico.exe:0",
+        "text": "Quick Any2Ico"
+      },
+      {
+        "cmd": "D:\\App\\RevoUninstaller_5.3.2_Portable\\RevoUPPort.exe",
+        "icon": "D:\\App\\RevoUninstaller_5.3.2_Portable\\RevoUPPort.exe:0",
+        "text": "RevoUninstaller"
+      },
+      {
+        "cmd": "run",
+        "icon": "D:\\App\\Sandboxie-Plus\\SandMan.exe:0",
+        "text": "Sandboxie"
+      },
+      {
+        "cmd": "D:\\App\\SysteminformerPlus\\Release64\\SystemInformer.exe",
+        "icon": "D:\\App\\SysteminformerPlus\\Release64\\SystemInformer.exe:0",
+        "text": "SystemInformer"
+      },
+      {
+        "cmd": "D:\\App\\TaskExplorer\\TaskExplorer.exe",
+        "icon": "D:\\App\\TaskExplorer\\TaskExplorer.exe:0",
+        "text": "TaskExplorer"
+      },
+      {
+        "cmd": "D:\\App\\ToDoList_9.2.7.0_Green\\ToDoList.exe",
+        "icon": "D:\\App\\ToDoList_9.2.7.0_Green\\ToDoList.exe:0",
+        "text": "ToDoList"
+      },
+      {
+        "cmd": "D:\\Program Files\\Trae CN\\Trae CN.exe",
+        "icon": "D:\\Program Files\\Trae CN\\Trae CN.exe:0",
+        "text": "Trae CN"
+      },
+      {
+        "cmd": "D:\\App\\TreeSize_9.8.2.2303_Portable\\TreeSizeProPortable.exe",
+        "icon": "D:\\App\\TreeSize_9.8.2.2303_Portable\\TreeSizeProPortable.exe:0",
+        "text": "TreeSize"
+      },
+      {
+        "cmd": "D:\\Program Files\\Microsoft VS Code\\Code.exe",
+        "icon": "D:\\Program Files\\Microsoft VS Code\\Code.exe:0",
+        "text": "VSCode"
+      },
+      {
+        "cmd": "D:\\App\\WubiLex\\WubiLex.exe",
+        "icon": "D:\\App\\WubiLex\\WubiLex.exe:0",
+        "text": "WubiLex字库管理"
+      },
+      {
+        "cmd": "D:\\App\\千宇智能关机\\MyTimeShutDown1.79\\千宇智能关机.exe",
+        "icon": "D:\\App\\千宇智能关机\\MyTimeShutDown1.79\\千宇智能关机.exe:0",
+        "text": "千宇智能关机"
+      },
+      {
+        "cmd": "D:\\App\\图吧工具箱202601\\图吧工具箱2026.exe",
+        "icon": "D:\\App\\图吧工具箱202601\\图吧工具箱2026.exe:0",
+        "text": "图吧工具箱"
+      }
+    ],
+    "name": "工具及应用",
+    "sub": {
+      "DOU": [
+        {
+          "cmd": "C:\\App\\DouyinLiveRecorder_v4.0.3\\DouyinLiveRecorder.exe",
+          "icon": "imageres.dll:263",
+          "text": "DouyinLiveRecorder"
+        },
+        {
+          "cmd": "C:\\App\\DouK-Downloader_V5.7_Windows_X64\\main.exe",
+          "icon": "C:\\App\\DouK-Downloader_V5.7_Windows_X64\\main.exe:0",
+          "text": "DouK-Downloader"
+        },
+        {
+          "cmd": ">DouK",
+          "icon": "imageres.dll:4",
+          "text": "DouK"
+        }
+      ],
+      "DouK": [
+        {
+          "cmd": "C:\\App\\DouK-Downloader_V5.7_Windows_X64",
+          "icon": "imageres.dll:4",
+          "text": "DouK"
+        },
+        {
+          "cmd": ">TXT",
+          "icon": "imageres.dll:15",
+          "text": "TXT"
+        }
+      ],
+      "Game": [
+        {
+          "cmd": "D:\\App\\War3_1.29\\Warcraft III.exe",
+          "icon": "D:\\App\\War3_1.29\\Warcraft III.exe:0",
+          "text": "War3"
+        },
+        {
+          "cmd": "D:\\App\\植物大战僵尸融合版3.5\\PlantsVsZombiesRH.exe",
+          "icon": "D:\\App\\植物大战僵尸融合版3.5\\PlantsVsZombiesRH.exe:0",
+          "text": "植物大战僵尸融合版3.5"
+        },
+        {
+          "cmd": ">GameTools",
+          "icon": "imageres.dll:0",
+          "text": "游戏工具"
+        },
+        {
+          "cmd": "explorer.exe shell:appsFolder\\Microsoft.MicrosoftSolitaireCollection_8wekyb3d8bbwe!App",
+          "icon": "\\icons\\MicrosoftSolitaire.ico:0",
+          "text": "SolitaireCollection"
+        }
+      ],
+      "GameTools": [
+        {
+          "cmd": "D:\\App\\OpenSpeedy-3.3.2-portable-signed\\openspeedy.exe",
+          "icon": "D:\\App\\OpenSpeedy-3.3.2-portable-signed\\openspeedy.exe:0",
+          "text": "OpenSpeedy"
+        }
+      ],
+      "TXT": [
+        {
+          "cmd": "C:\\App\\DouK-Downloader_V5.7_Windows_X64\\2.TXT",
+          "icon": "imageres.dll:15",
+          "text": "2.TXT"
+        }
+      ],
+      "下载工具": [
+        {
+          "cmd": "C:\\App\\IDM v6.42.51.2_MagicGenius\\IDMan.exe",
+          "icon": "C:\\App\\IDM v6.42.51.2_MagicGenius\\IDMan.exe:0",
+          "text": "IDM"
+        },
+        {
+          "cmd": "C:\\App\\Thunder\\Program\\Thunder.exe",
+          "icon": "C:\\App\\Thunder\\Program\\Thunder.exe:0",
+          "text": "Thunder"
+        }
+      ],
+      "内部函数": [
+        {
+          "cmd": "function:ToggleDesktop",
+          "icon": "C:\\Windows\\explorer.exe:4",
+          "text": "显示/隐藏桌面"
+        },
+        {
+          "cmd": "function:ShowHelp",
+          "icon": "shell32.dll,155",
+          "text": "使用帮助"
+        },
+        {
+          "cmd": "function:ShowAbout",
+          "icon": "shell32.dll,278",
+          "text": "关于"
+        },
+        {
+          "cmd": "function:ToggleSuspend",
+          "icon": "shell32.dll,239",
+          "text": "暂停/恢复脚本"
+        },
+        {
+          "cmd": "function:CaptureScreen",
+          "icon": "shell32.dll,75",
+          "text": "截取屏幕"
+        },
+        {
+          "cmd": "function:OpenScreenshotsFolder",
+          "icon": "",
+          "text": "打开截图文件夹"
+        },
+        {
+          "cmd": "function:ShowHiddenWindowManager",
+          "icon": "shell32.dll,46",
+          "text": "窗口隐藏管理"
+        },
+        {
+          "cmd": "function:RestoreAllHiddenWindows",
+          "icon": "shell32.dll,47",
+          "text": "恢复所有隐藏窗口"
+        },
+        {
+          "cmd": "function:CopySelectedText",
+          "icon": "",
+          "text": "复制选中"
+        },
+        {
+          "cmd": "function:CutSelectedText",
+          "icon": "",
+          "text": "剪切选中内容"
+        },
+        {
+          "cmd": "function:PasteText",
+          "icon": "",
+          "text": "粘贴"
+        },
+        {
+          "cmd": "function:EmptyRecycleBin",
+          "icon": "",
+          "text": "清空回收站"
+        },
+        {
+          "cmd": "function:ShowTrayMenu",
+          "icon": "",
+          "text": "显示托盘菜单"
+        },
+        {
+          "cmd": "function:OpenTaskManager",
+          "icon": "",
+          "text": "打开任务管理器"
+        },
+        {
+          "cmd": "function:StartScreenshotTool",
+          "icon": "shell32.dll,70",
+          "text": "截图/贴图"
+        },
+        {
+          "cmd": "function:CloseWindowUnderMouse",
+          "icon": "C:\\Windows\\explorer.exe:22",
+          "text": "关闭当前窗口"
+        },
+        {
+          "cmd": "function:MediaPlayPause",
+          "icon": "",
+          "text": "播放/暂停"
+        },
+        {
+          "cmd": "function:VolumeMute",
+          "icon": "",
+          "text": "切换静音"
+        },
+        {
+          "cmd": "function:ShowClipboardHistory",
+          "icon": "",
+          "text": "剪贴板历史"
+        },
+        {
+          "cmd": "function:ShowHardwareInfo",
+          "icon": "",
+          "text": "系统硬件信息"
+        },
+        {
+          "cmd": "function:ShowReminderManager",
+          "icon": "",
+          "text": "定时提醒"
+        }
+      ],
+      "网盘": [
+        {
+          "cmd": "C:\\Users\\Administrator\\AppData\\Roaming\\baidu\\BaiduNetdisk\\BaiduNetdisk.exe",
+          "icon": "C:\\Users\\Administrator\\AppData\\Roaming\\baidu\\BaiduNetdisk\\BaiduNetdisk.exe:0",
+          "text": "百度云盘"
+        }
+      ]
+    },
+    "target": "",
+    "type": "menu"
+  },
+  "12": {
+    "function": "",
+    "icon": "shell32.dll,5",
+    "items": [
+      {
+        "cmd": "explorer.exe ::{20D04FE0-3AEA-1069-A2D8-08002B30309D}",
+        "icon": "shell32.dll,16",
+        "text": "此电脑"
+      },
+      {
+        "cmd": ">中铁物资集团工程建设指挥部",
+        "icon": "imageres.dll,180",
+        "text": "中铁物资集团工程建设指挥部"
+      },
+      {
+        "cmd": "C:\\App",
+        "icon": "shell32.dll,4",
+        "text": "AppC文件夹"
+      },
+      {
+        "cmd": "D:\\App",
+        "icon": "shell32.dll,4",
+        "text": "AppD文件夹"
+      }
+    ],
+    "name": "文件夹",
+    "sub": {
+      "中铁物资集团工程建设指挥部": [
+        {
+          "cmd": "G:\\1中铁物资集团工程建设指挥部",
+          "icon": "comres.dll,3",
+          "text": "1中铁物资集团工程建设指挥部"
+        },
+        {
+          "cmd": "G:\\1中铁物资集团工程建设指挥部\\4前期手续",
+          "icon": "comres.dll,3",
+          "text": "4前期手续"
+        },
+        {
+          "cmd": "G:\\1中铁物资集团工程建设指挥部\\5立项",
+          "icon": "comres.dll,3",
+          "text": "5立项"
+        },
+        {
+          "cmd": "G:\\1中铁物资集团工程建设指挥部\\29文字资料",
+          "icon": "comres.dll,3",
+          "text": "29文字资料"
+        }
+      ]
+    },
+    "target": "",
+    "type": "menu"
+  },
+  "13": {
+    "function": "",
+    "icon": "shell32.dll:221",
+    "items": [
+      {
+        "cmd": "msedge.exe",
+        "icon": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe:0",
+        "text": "Edge浏览器"
+      },
+      {
+        "cmd": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+        "icon": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe:0",
+        "text": "Chrome浏览器"
+      },
+      {
+        "cmd": "---",
+        "icon": "",
+        "text": ""
+      },
+      {
+        "cmd": "https://sso.crcc.cn/",
+        "icon": "\\icons\\crcc.ico:0",
+        "text": "协同办公"
+      },
+      {
+        "cmd": "https://cn.bing.com/",
+        "icon": "\\icons\\bing.ico:0",
+        "text": "Bing"
+      },
+      {
+        "cmd": "https://www.baidu.com/",
+        "icon": "\\icons\\baidu.ico:0",
+        "text": "百度"
+      },
+      {
+        "cmd": "https://fanyi.youdao.com/",
+        "icon": "\\icons\\youdaofanyi.ico:0",
+        "text": "有道翻译"
+      },
+      {
+        "cmd": "https://chat.deepseek.com/",
+        "icon": "\\icons\\deepseek.ico:0",
+        "text": "deepseek"
+      },
+      {
+        "cmd": "https://www.ghxi.com/",
+        "icon": "\\icons\\ghxi.ico:0",
+        "text": "果核剥壳"
+      },
+      {
+        "cmd": "https://www.52pojie.cn/",
+        "icon": "\\icons\\52pojie.ico:0",
+        "text": "吾爱破解"
+      },
+      {
+        "cmd": "https://www.cfmem.com/",
+        "icon": "\\icons\\cfmem.ico:0",
+        "text": "长风分享"
+      }
+    ],
+    "name": "常用网站",
+    "sub": {},
+    "target": "",
+    "type": "menu"
+  },
+  "14": {
+    "function": "",
+    "icon": "C:\\Program Files (x86)\\Kingsoft\\WPS Office\\ksolaunch.exe:00",
+    "items": [
+      {
+        "cmd": "C:\\Program Files (x86)\\crcctjt\\crcctjt.exe",
+        "icon": "C:\\Program Files (x86)\\crcctjt\\crcctjt.exe,0",
+        "text": "铁建通"
+      },
+      {
+        "cmd": "---",
+        "icon": "",
+        "text": ""
+      },
+      {
+        "cmd": "C:\\Program Files (x86)\\Kingsoft\\WPS Office\\12.1.0.22529\\office6\\wps.exe",
+        "icon": "C:\\Program Files (x86)\\Kingsoft\\WPS Office\\12.1.0.22529\\office6\\wps.exe:00",
+        "text": "WPS文字"
+      },
+      {
+        "cmd": "C:\\Program Files (x86)\\Kingsoft\\WPS Office\\12.1.0.22529\\office6\\et.exe",
+        "icon": "C:\\Program Files (x86)\\Kingsoft\\WPS Office\\12.1.0.22529\\office6\\et.exe:00",
+        "text": "WPS表格"
+      },
+      {
+        "cmd": "\"C:\\Program Files (x86)\\Kingsoft\\WPS Office\\12.1.0.22529\\office6\\wpp.exe\" /w /from=startmenu",
+        "icon": "C:\\Program Files (x86)\\Kingsoft\\WPS Office\\12.1.0.22529\\office6\\wpp.exe:00",
+        "text": "WPS演示"
+      },
+      {
+        "cmd": "D:\\App\\PDF-XChange_Editor_Plus_v7.0.324.3_x64_Portable\\PDFXEdit7Portable x64\\PDFXEdit.exe",
+        "icon": "D:\\App\\PDF-XChange_Editor_Plus_v7.0.324.3_x64_Portable\\PDFXEdit7Portable x64\\PDFXEdit.exe:00",
+        "text": "PDFXEdit"
+      },
+      {
+        "cmd": "D:\\App\\AutoCAD_2021_64bit_Green\\AutoCAD 2021\\acad.exe",
+        "icon": "D:\\App\\AutoCAD_2021_64bit_Green\\AutoCAD 2021\\acad.exe:00",
+        "text": "CAD"
+      },
+      {
+        "cmd": "D:\\App\\cad快速看图\\cad快速看图.exe",
+        "icon": "D:\\App\\cad快速看图\\cad快速看图.exe:00",
+        "text": "cad快速看图"
+      },
+      {
+        "cmd": "D:\\App\\PhotoshopCC2019v20.0.1.17836Portable\\Photoshoр.exe",
+        "icon": "D:\\App\\PhotoshopCC2019v20.0.1.17836Portable\\Photoshoр.exe:00",
+        "text": "Photoshop"
+      },
+      {
+        "cmd": "D:\\App\\VueScan-Pro-v9.8.39.07-with-OCR-Portable\\VueScanPortable.exe",
+        "icon": "D:\\App\\VueScan-Pro-v9.8.39.07-with-OCR-Portable\\VueScanPortable.exe:00",
+        "text": "VueScanPortable"
+      }
+    ],
+    "name": "办公软件",
+    "sub": {},
+    "target": "",
+    "type": "menu"
+  },
+  "15": {
+    "function": "",
+    "icon": "imageres.dll:243",
+    "items": [
+      {
+        "cmd": "D:\\App\\aardio\\aardio.exe",
+        "icon": "D:\\App\\aardio\\aardio.exe:0",
+        "text": "aardio"
+      },
+      {
+        "cmd": "\"C:\\Program Files (x86)\\CodeGear\\RAD Studio\\5.0\\bin\\bds.exe\" -pDelphi",
+        "icon": "C:\\Program Files (x86)\\CodeGear\\RAD Studio\\5.0\\bin\\bds.exe:0",
+        "text": "Delphi2007"
+      },
+      {
+        "cmd": "\"C:\\Program Files\\Xiaomi MiMo\\Xiaomi MiMo.exe\"",
+        "icon": "C:\\Program Files\\Xiaomi MiMo\\Xiaomi MiMo.exe:0",
+        "text": "MiMo"
+      },
+      {
+        "cmd": "D:\\Program Files\\Trae CN\\Trae CN.exe",
+        "icon": "D:\\Program Files\\Trae CN\\Trae CN.exe:0",
+        "text": "Trae"
+      },
+      {
+        "cmd": "D:\\Program Files\\Microsoft VS Code\\Code.exe",
+        "icon": "D:\\Program Files\\Microsoft VS Code\\Code.exe:0",
+        "text": "VSCode"
+      },
+      {
+        "cmd": "D:\\App\\RedPanda-CPP\\RedPandaIDE.exe",
+        "icon": "D:\\App\\RedPanda-CPP\\RedPandaIDE.exe:0",
+        "text": "小熊猫C"
+      },
+      {
+        "cmd": "D:\\App\\e_5.9.5_Green\\e.exe",
+        "icon": "D:\\App\\e_5.9.5_Green\\e.exe:0",
+        "text": "易语言"
+      }
+    ],
+    "name": "编程",
+    "sub": {},
+    "target": "",
+    "type": "menu"
+  },
+  "16": {
+    "function": "ShowTrayMenu",
+    "icon": "C:\\Windows\\explorer.exe:18",
+    "items": [],
+    "name": "托盘菜单",
+    "sub": {},
+    "target": "",
+    "type": "function"
+  },
+  "2": {
+    "function": "HideWindowUnderMouse",
+    "icon": "C:\\Windows\\System32\\imageres.dll:226",
+    "items": [],
+    "name": "隐藏当前窗口",
+    "sub": {},
+    "target": "",
+    "type": "function"
+  },
+  "3": {
+    "function": "ShowInstalledApps",
+    "icon": "imageres.dll:249",
+    "items": [],
+    "name": "程序列表",
+    "sub": {},
+    "target": "",
+    "type": "function"
+  },
+  "4": {
+    "function": "",
+    "icon": "C:\\App\\Directory.Opus.Pro.13.15_64bit_Neoland\\dopus.exe:0",
+    "items": [],
+    "name": "DOpus",
+    "sub": {},
+    "target": "C:\\App\\Directory.Opus.Pro.13.15_64bit_Neoland\\dopus.exe",
+    "type": "run"
+  },
+  "5": {
+    "function": "",
+    "icon": "C:\\Program Files\\Tencent\\Weixin\\Weixin.exe:0",
+    "items": [],
+    "name": "微信",
+    "sub": {},
+    "target": "C:\\Program Files\\Tencent\\Weixin\\Weixin.exe",
+    "type": "run"
+  },
+  "6": {
+    "function": "",
+    "icon": "C:\\Program Files\\Tencent\\QQNT\\QQ.exe:0",
+    "items": [],
+    "name": "QQ",
+    "sub": {},
+    "target": "C:\\Program Files\\Tencent\\QQNT\\QQ.exe",
+    "type": "run"
+  },
+  "7": {
+    "function": "",
+    "icon": "imageres.dll:19",
+    "items": [
+      {
+        "cmd": "C:\\App\\Honeyview_5.53_Portable\\Honeyview32.exe",
+        "icon": "C:\\App\\Honeyview_5.53_Portable\\Honeyview32.exe:0",
+        "text": "Honeyview"
+      },
+      {
+        "cmd": "D:\\App\\Imagine 1.6.0\\Imagine_1.6.0_Full.exe",
+        "icon": "D:\\App\\Imagine 1.6.0\\Imagine_1.6.0_Full.exe:0",
+        "text": "Imaginel"
+      },
+      {
+        "cmd": "D:\\App\\FSMaxView\\MaxView.exe",
+        "icon": "D:\\App\\FSMaxView\\MaxView.exe:0",
+        "text": "FSMaxView"
+      },
+      {
+        "cmd": "D:\\App\\caesium image compressor_2.8.5_Portable\\caesium-image-compressor-2.8.5-win\\Caesium Image Compressor.exe",
+        "icon": "D:\\App\\caesium image compressor_2.8.5_Portable\\caesium-image-compressor-2.8.5-win\\Caesium Image Compressor.exe:0",
+        "text": "Cesium Image Compressor"
+      },
+      {
+        "cmd": "D:\\App\\Gif123\\Gif123.exe",
+        "icon": "D:\\App\\Gif123\\Gif123.exe,0",
+        "text": "Gif123"
+      },
+      {
+        "cmd": "D:\\App\\图片尺寸计算\\图片尺寸计算器(claude版)2.0.html",
+        "icon": "shell32.dll:160",
+        "text": "图片尺寸计算器"
+      },
+      {
+        "cmd": "---",
+        "icon": "",
+        "text": ""
+      },
+      {
+        "cmd": "D:\\App\\audacity-win-3.7.7-64bit\\Audacity.exe",
+        "icon": "D:\\App\\audacity-win-3.7.7-64bit\\Audacity.exe:0",
+        "text": "Audacity"
+      },
+      {
+        "cmd": "D:\\App\\GridPlayer\\GridPlayer.exe",
+        "icon": "D:\\App\\GridPlayer\\GridPlayer.exe:0",
+        "text": "GridPlayer"
+      },
+      {
+        "cmd": "D:\\App\\MPC-BE.1.8.5.x64\\mpc-be64.exe",
+        "icon": "D:\\App\\MPC-BE.1.8.5.x64\\mpc-be64.exe:0",
+        "text": "MPC-BE"
+      },
+      {
+        "cmd": "D:\\App\\ShanaEncoder_6.0.1.6_Green\\ShanaEncoder.exe",
+        "icon": "D:\\App\\ShanaEncoder_6.0.1.6_Green\\ShanaEncoder.exe:0",
+        "text": "ShanaEncoder"
+      },
+      {
+        "cmd": "D:\\App\\splitit_gr\\SplitIt.exe",
+        "icon": "D:\\App\\splitit_gr\\SplitIt.exe:0",
+        "text": "SplitIt"
+      },
+      {
+        "cmd": "D:\\App\\VPot_2411_Single\\VPot_2411_Single.exe",
+        "icon": "D:\\App\\VPot_2411_Single\\VPot_2411_Single.exe:0",
+        "text": "VPot"
+      },
+      {
+        "cmd": "D:\\App\\Jianying_Pro_v6.0.1\\JianyingPro.exe",
+        "icon": "D:\\App\\Jianying_Pro_v6.0.1\\JianyingPro.exe:0",
+        "text": "JianyingPro"
+      },
+      {
+        "cmd": "D:\\App\\格式工厂_5.12.4_64bit_Green\\FormatFactory\\FormatFactory.exe",
+        "icon": "D:\\App\\格式工厂_5.12.4_64bit_Green\\FormatFactory\\FormatFactory.exe:0",
+        "text": "格式工厂"
+      }
+    ],
+    "name": "视频图片",
+    "sub": {},
+    "target": "",
+    "type": "menu"
+  },
+  "8": {
+    "function": "",
+    "icon": "D:\\App\\AutoHotkey_v1.1.37.02_v2.0.19(32bit+64bit)\\v2\\AutoHotkey.exe:1",
+    "items": [
+      {
+        "cmd": "AutoHotkey.exe C:\\APP\\AutoHotkeyScripts\\桌面时钟V0.23.1\\桌面时钟V0.23.1.ahk",
+        "icon": "D:\\App\\AutoHotkey_v1.1.37.02_v2.0.19(32bit+64bit)\\v2\\AutoHotkey.exe:1",
+        "text": "桌面时钟V0.23.1"
+      },
+      {
+        "cmd": "D:\\App\\AutoHotkey_v1.1.37.02_v2.0.19(32bit+64bit)\\v2\\AutoHotkey.exe C:\\APP\\AutoHotkeyScripts\\V2\\WindowManager.ahk",
+        "icon": "D:\\App\\AutoHotkey_v1.1.37.02_v2.0.19(32bit+64bit)\\v2\\AutoHotkey.exe:1",
+        "text": "拖动最小化置顶窗口"
+      },
+      {
+        "cmd": "AutoHotkey.exe D:\\App\\AutoHotkey_v1.1.37.02_v2.0.19(32bit+64bit)\\UX\\WindowSpy.ahk",
+        "icon": "D:\\App\\AutoHotkey_v1.1.37.02_v2.0.19(32bit+64bit)\\UX\\Inc\\Spy.ico",
+        "text": "WindowSpy"
+      },
+      {
+        "cmd": "C:\\APP\\AutoHotkeyScripts\\V2\\PreventSleep.ahk",
+        "icon": "D:\\App\\AutoHotkey_v1.1.37.02_v2.0.19(32bit+64bit)\\v2\\AutoHotkey.exe:1",
+        "text": "防止屏幕休眠"
+      },
+      {
+        "cmd": "C:\\App\\AutoHotkeyScripts\\XiaoYao_快速跳转\\XiaoYao_快速跳转.exe",
+        "icon": "C:\\App\\AutoHotkeyScripts\\XiaoYao_快速跳转\\XiaoYao_快速跳转.exe:0",
+        "text": "快速跳转"
+      },
+      {
+        "cmd": "AutoHotkey.exe  IconViewer.ahk",
+        "icon": "C:\\Windows\\System32\\imageres.dll:196",
+        "text": "IconViewer.ahk"
+      },
+      {
+        "cmd": "D:\\App\\AutoHotkey_v1.1.37.02_v2.0.19(32bit+64bit)\\AutoHotkey.exe C:\\APP\\AutoHotkeyScripts\\窗口遮蔽(win+z卷起窗口到标题栏).ahk",
+        "icon": "D:\\App\\AutoHotkey_v1.1.37.02_v2.0.19(32bit+64bit)\\AutoHotkey.exe:0",
+        "text": "win+z卷起窗口到标题栏"
+      },
+      {
+        "cmd": "D:\\App\\AutoHotkey_v1.1.37.02_v2.0.19(32bit+64bit)\\AutoHotkey.exe F:\\软件\\编程\\AutoHotkey\\窗口遮蔽 (win+z卷起窗口到标题栏) -- by Rajat.ahk",
+        "icon": "D:\\App\\AutoHotkey_v1.1.37.02_v2.0.19(32bit+64bit)\\AutoHotkey.exe:0",
+        "text": "窗口遮蔽 (win+z卷起窗口到标题栏) -- by Rajat"
+      },
+      {
+        "cmd": "D:\\App\\AutoHotkey_v1.1.37.02_v2.0.19(32bit+64bit)\\AutoHotkey.exe D:\\App\\AutoHotkey_v1.1.37.02_v2.0.19(32bit+64bit)\\MyScripts\\KBLAutoSwitch-2.4.1\\KBLAutoSwitch.ahk",
+        "icon": "D:\\App\\AutoHotkey_v1.1.37.02_v2.0.19(32bit+64bit)\\MyScripts\\KBLAutoSwitch-2.4.1\\KBLAutoSwitch.exe:0",
+        "text": "KBLAutoSwitch"
+      },
+      {
+        "cmd": "D:\\App\\AutoHotkey_v1.1.37.02_v2.0.19(32bit+64bit)\\MyScripts\\Yzime_2.1.0_Green\\Yzime64.exe",
+        "icon": "D:\\App\\AutoHotkey_v1.1.37.02_v2.0.19(32bit+64bit)\\MyScripts\\Yzime_2.1.0_Green\\Yzime64.exe:0",
+        "text": "Yzime"
+      }
+    ],
+    "name": "AHK脚本",
+    "sub": {},
+    "target": "",
+    "type": "menu"
+  },
+  "9": {
+    "function": "",
+    "icon": "SnippingTool.exe:0",
+    "items": [
+      {
+        "cmd": "D:\\App\\FastStoneCapture_11.1_Portable\\FSCapture\\FSCapture.exe",
+        "icon": "D:\\App\\FastStoneCapture_11.1_Portable\\FSCapture\\FSCapture.exe:0",
+        "text": "FastStoneCapture"
+      },
+      {
+        "cmd": "D:\\App\\PixPin\\PixPin.exe",
+        "icon": "D:\\App\\PixPin\\PixPin.exe:0",
+        "text": "PixPin"
+      },
+      {
+        "cmd": "SnippingTool.exe",
+        "icon": "SnippingTool.exe:0",
+        "text": "截图工具"
+      }
+    ],
+    "name": "截图工具",
+    "sub": {},
+    "target": "",
+    "type": "menu"
+  },
+  "appearance": {
+    "background": "comfortable",
+    "backgroundAlpha": 200,
+    "bgColor": "F0F0F0",
+    "escapeRadius": 40,
+    "fontSize": 12,
+    "fontWeight": 700,
+    "highlightAlpha": 80,
+    "highlightColor": "3399FF",
+    "outerRadius": 250,
+    "penColor": "FFFFFF",
+    "penWidth": 2,
+    "textColor": "4A4A4A",
+    "windowSize": 500
+  },
+  "showMenuIcon": 1,
+  "showSectorIcon": 1
+}
