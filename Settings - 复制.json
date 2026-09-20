@@ -368,7 +368,11 @@
         "icon": "imageres.dll:176",
         "text": "下载工具"
       },
-
+      {
+        "cmd": ">DOU",
+        "icon": "imageres.dll:263",
+        "text": "DOU"
+      },
       {
         "cmd": ">Game",
         "icon": "imageres.dll:196",
@@ -512,7 +516,35 @@
     ],
     "name": "工具及应用",
     "sub": {
-
+      "DOU": [
+        {
+          "cmd": "C:\\App\\DouyinLiveRecorder_v4.0.3\\DouyinLiveRecorder.exe",
+          "icon": "imageres.dll:263",
+          "text": "DouyinLiveRecorder"
+        },
+        {
+          "cmd": "C:\\App\\DouK-Downloader_V5.7_Windows_X64\\main.exe",
+          "icon": "C:\\App\\DouK-Downloader_V5.7_Windows_X64\\main.exe:0",
+          "text": "DouK-Downloader"
+        },
+        {
+          "cmd": ">DouK",
+          "icon": "imageres.dll:4",
+          "text": "DouK"
+        }
+      ],
+      "DouK": [
+        {
+          "cmd": "C:\\App\\DouK-Downloader_V5.7_Windows_X64",
+          "icon": "imageres.dll:4",
+          "text": "DouK"
+        },
+        {
+          "cmd": ">TXT",
+          "icon": "imageres.dll:15",
+          "text": "TXT"
+        }
+      ],
       "Game": [
         {
           "cmd": "D:\\App\\War3_1.29\\Warcraft III.exe",
@@ -542,7 +574,13 @@
           "text": "OpenSpeedy"
         }
       ],
-
+      "TXT": [
+        {
+          "cmd": "C:\\App\\DouK-Downloader_V5.7_Windows_X64\\2.TXT",
+          "icon": "imageres.dll:15",
+          "text": "2.TXT"
+        }
+      ],
       "下载工具": [
         {
           "cmd": "C:\\App\\IDM v6.42.51.2_MagicGenius\\IDMan.exe",
@@ -682,7 +720,11 @@
         "icon": "shell32.dll,16",
         "text": "此电脑"
       },
-
+      {
+        "cmd": ">中铁物资集团工程建设指挥部",
+        "icon": "imageres.dll,180",
+        "text": "中铁物资集团工程建设指挥部"
+      },
       {
         "cmd": "C:\\App",
         "icon": "shell32.dll,4",
@@ -696,16 +738,26 @@
     ],
     "name": "文件夹",
     "sub": {
-      "工作": [
+      "中铁物资集团工程建设指挥部": [
         {
-          "cmd": "G:\\工作1",
+          "cmd": "G:\\1中铁物资集团工程建设指挥部",
           "icon": "comres.dll,3",
-          "text": "工作1"
+          "text": "1中铁物资集团工程建设指挥部"
         },
         {
-          "cmd": "G:\\工作1\\续",
+          "cmd": "G:\\1中铁物资集团工程建设指挥部\\4前期手续",
           "icon": "comres.dll,3",
-          "text": "续"
+          "text": "4前期手续"
+        },
+        {
+          "cmd": "G:\\1中铁物资集团工程建设指挥部\\5立项",
+          "icon": "comres.dll,3",
+          "text": "5立项"
+        },
+        {
+          "cmd": "G:\\1中铁物资集团工程建设指挥部\\29文字资料",
+          "icon": "comres.dll,3",
+          "text": "29文字资料"
         }
       ]
     },
@@ -731,7 +783,11 @@
         "icon": "",
         "text": ""
       },
-
+      {
+        "cmd": "https://sso.crcc.cn/",
+        "icon": "\\icons\\crcc.ico:0",
+        "text": "协同办公"
+      },
       {
         "cmd": "https://cn.bing.com/",
         "icon": "\\icons\\bing.ico:0",
@@ -761,6 +817,11 @@
         "cmd": "https://www.52pojie.cn/",
         "icon": "\\icons\\52pojie.ico:0",
         "text": "吾爱破解"
+      },
+      {
+        "cmd": "https://www.cfmem.com/",
+        "icon": "\\icons\\cfmem.ico:0",
+        "text": "长风分享"
       }
     ],
     "name": "常用网站",
@@ -772,7 +833,16 @@
     "function": "",
     "icon": "C:\\Program Files (x86)\\Kingsoft\\WPS Office\\ksolaunch.exe:00",
     "items": [
-
+      {
+        "cmd": "C:\\Program Files (x86)\\crcctjt\\crcctjt.exe",
+        "icon": "C:\\Program Files (x86)\\crcctjt\\crcctjt.exe,0",
+        "text": "铁建通"
+      },
+      {
+        "cmd": "---",
+        "icon": "",
+        "text": ""
+      },
       {
         "cmd": "C:\\Program Files (x86)\\Kingsoft\\WPS Office\\12.1.0.22529\\office6\\wps.exe",
         "icon": "C:\\Program Files (x86)\\Kingsoft\\WPS Office\\12.1.0.22529\\office6\\wps.exe:00",

@@ -2,4 +2,5 @@ _backup/
 trunner_diag.txt
 README_V0.27.txt
 *.bak
+Settings - 复制.json
 .gitignore

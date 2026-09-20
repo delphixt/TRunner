@@ -239,7 +239,12 @@ MatchAhkHandle(hwnd, ahkHandles) {
             continue
         if RegExMatch(crit, "^ahk_exe\s+(.+)$", &m) {
             targetExe := m[1]
-            WinGetPID(&pid, "ahk_id " hwnd)
+            try {
+                ; AHK v2: WinGetPID returns the PID
+                pid := WinGetPID("ahk_id " hwnd)
+            } catch {
+                continue
+            }
             if (pid = 0)
                 continue
             try {
@@ -251,7 +256,11 @@ MatchAhkHandle(hwnd, ahkHandles) {
             }
         } else if (RegExMatch(crit, "^ahk_class\s+(.+)$", &m)) {
             targetClass := m[1]
-            WinGetClass(&cls, "ahk_id " hwnd)
+            try {
+                cls := WinGetClass("ahk_id " hwnd)
+            } catch {
+                continue
+            }
             if (StrCompare(cls, targetClass, 1) = 0)
                 return true
         }

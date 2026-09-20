@@ -1109,7 +1109,11 @@ MatchAhkHandle(hwnd, ahkHandles) {
             continue
         if RegExMatch(crit, "^ahk_exe\s+(.+)$", &m) {
             targetExe := m[1]
-            WinGetPID(&pid, "ahk_id " hwnd)
+            try {
+                pid := WinGetPID("ahk_id " hwnd)
+            } catch {
+                continue
+            }
             if (pid = 0)
                 continue
             try {
@@ -1121,7 +1125,11 @@ MatchAhkHandle(hwnd, ahkHandles) {
             }
         } else if (RegExMatch(crit, "^ahk_class\s+(.+)$", &m)) {
             targetClass := m[1]
-            WinGetClass(&cls, "ahk_id " hwnd)
+            try {
+                cls := WinGetClass("ahk_id " hwnd)
+            } catch {
+                continue
+            }
             if (StrCompare(cls, targetClass, 1) = 0)
                 return true
         }
@@ -1516,15 +1524,54 @@ UpdateTrayStatus() {
 
 ; ============================================================
 ;  3.8 开机启动管理 (ToggleStartup)
+;  当前方案：用户启动文件夹（A_Startup\TRunner.lnk）
+;  旧方案：注册表 HKCU\...\Run（已注释保留，暂不删除代码）
 ; ============================================================
-StartupRegKey := "HKCU\Software\Microsoft\Windows\CurrentVersion\Run"
-StartupRegName := "TRunner"
+
+; --- 旧方案：注册表 HKCU Run（已注释，不再使用）---
+; StartupRegKey := "HKCU\Software\Microsoft\Windows\CurrentVersion\Run"
+; StartupRegName := "TRunner"
+;
+; IsStartupEnabled() {
+;     global StartupRegKey, StartupRegName
+;     try {
+;         val := RegRead(StartupRegKey, StartupRegName)
+;         return (val != "")
+;     } catch {
+;         return false
+;     }
+; }
+;
+; ToggleStartup(*) {
+;     global StartupRegKey, StartupRegName
+;     scriptPath := A_ScriptFullPath
+;     enabled := IsStartupEnabled()
+;     if enabled {
+;         try RegDelete(StartupRegKey, StartupRegName)
+;         catch as e {
+;             ReportStartupStatus("开机启动", "取消失败：" e.Message, "error")
+;             return
+;         }
+;         ReportStartupStatus("开机启动", "已取消开机启动。", "ok")
+;     } else {
+;         try RegWrite(scriptPath, "REG_SZ", StartupRegKey, StartupRegName)
+;         catch as e {
+;             ReportStartupStatus("开机启动", "设置失败：" e.Message, "error")
+;             return
+;         }
+;         ReportStartupStatus("开机启动", "已启用开机启动。", "ok")
+;     }
+;     try UpdateTrayStatus()
+; }
+
+; --- 新方案：启动文件夹快捷方式 ---
+GetStartupShortcutPath() {
+    return A_Startup "\TRunner.lnk"
+}
 
 IsStartupEnabled() {
-    global StartupRegKey, StartupRegName
     try {
-        val := RegRead(StartupRegKey, StartupRegName)
-        return (val != "")
+        return FileExist(GetStartupShortcutPath()) ? true : false
     } catch {
         return false
     }
@@ -1546,36 +1593,41 @@ ReportStartupStatus(title, detail, kind := "info") {
 }
 
 ToggleStartup(*) {
-    global StartupRegKey, StartupRegName
+    lns := GetStartupShortcutPath()
     scriptPath := A_ScriptFullPath
+    workDir := A_ScriptDir
     enabled := IsStartupEnabled()
 
     if enabled {
         try {
-            RegDelete(StartupRegKey, StartupRegName)
+            FileDelete(lns)
         } catch as e {
-            ReportStartupStatus("开机启动", "取消失败：" e.Message, "error")
+            ReportStartupStatus("开机启动", "取消失败：" e.Message "`n" lns, "error")
             return
         }
-        if IsStartupEnabled() {
-            ReportStartupStatus("开机启动", "取消失败：注册表项仍存在", "error")
+        if FileExist(lns) {
+            ReportStartupStatus("开机启动", "取消失败：快捷方式仍存在`n" lns, "error")
             return
         }
-        ReportStartupStatus("开机启动", "已取消开机启动。`n托盘菜单「开机启动」勾选应已去掉。", "ok")
+        ReportStartupStatus("开机启动", "已取消开机启动。`n已删除启动文件夹快捷方式。", "ok")
     } else {
         try {
-            RegWrite(scriptPath, "REG_SZ", StartupRegKey, StartupRegName)
+            if A_IsCompiled
+                FileCreateShortcut(scriptPath, lns, workDir)
+            else
+                FileCreateShortcut(A_AhkPath, lns, workDir, '"' scriptPath '"')
         } catch as e {
             ReportStartupStatus("开机启动", "设置失败：" e.Message, "error")
             return
         }
-        verify := ""
-        try verify := RegRead(StartupRegKey, StartupRegName)
-        if (verify != scriptPath) {
-            ReportStartupStatus("开机启动", "设置可能失败。`n读回值：" verify, "error")
+        if !FileExist(lns) {
+            ReportStartupStatus("开机启动", "设置失败：快捷方式未创建`n" lns, "error")
             return
         }
-        ReportStartupStatus("开机启动", "已启用开机启动。`n路径：" scriptPath "`n托盘菜单「开机启动」应有勾选。", "ok")
+        detail := "已启用开机启动（启动文件夹）。`n快捷方式：" lns
+        if !A_IsCompiled
+            detail .= "`n解释器：" A_AhkPath "`n脚本：" scriptPath
+        ReportStartupStatus("开机启动", detail, "ok")
     }
 
     try UpdateTrayStatus()
